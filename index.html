@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="pdkgaming" ng-controller="gaming" style="margin:0px">
+
+
+
+
+
+
+<div id="set1">
+<img id="divider1" src="divider.png">
+<img id="logo" src="logo.png">
+<p id="topright1" class="oswald pointer">HOW TO PLAY</p>
+<p id="topright2" class="oswald pointer">SIGN IN</p>
+<p id="big1" class="modithorson">BIG TITLE</p>
+<p id="para1"class="oswald">FREE ENTRY TO A COMPETETIVE GAME</p>
+<p id="explore" class="oswald pointer">EXPLORE</p>
+</div>
+
+
+<div id="set2">
+<img id="divider2" src="divider.png">
+<p id="tournament" class="modithorson"><u>TOURNAMENTS</u></p>
+<img id="tour7" class="pointer" src="tournaments.png">
+<img id="tour6" class="pointer" src="tournaments.png">
+<img id="tour5" class="pointer" src="tournaments.png">
+<img id="tour4" class="pointer" src="tournaments.png">
+<img id="tour3" class="pointer" src="tournaments.png">
+<img id="tour2" class="pointer" src="tournaments.png">
+<img id="tour1" class="pointer" src="tournaments.png">
+</div>
+
+
+<div id="set3">
+<img id="divider3" src="divider.png">
+<img id="tag1" class="pointer" src="tag1.png">
+<img id="tag2" class="pointer" src="tag2.png">
+<img id="tag3" class="pointer" src="tag3.png">
+</div>
+
+
+<div id="set4">
+<img id="divider4" src="divider.png">
+<p id="big2" class="modithorson"><u>BIG TITLE</u></p>
+<img id="rightbullet1" src="bullet.png">
+<p id="rightline1" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="rightbullet2" src="bullet.png">
+<p id="rightline2" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="rightbullet3" src="bullet.png">
+<p id="rightline3" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="rightbullet4" src="bullet.png">
+<p id="rightline4" class="oswald">Lorem Ipsum is simply dummy text</p>
+</div>
+
+
+<div id="set5">
+<img id="divider5" src="divider.png">
+<p id="notbig1" class="oswald">LOREM ISPUM IS SIMPLY DUMMY TEXT</p>
+<p id="bigbutton" class="oswald pointer">JOIN NOW</p>
+</div>
+
+
+<div id="set6">
+<img id="divider6" src="divider.png">
+<p id="big3" class="modithorson"><u>BIG TITLE</u></p>
+<img id="leftbullet1" src="bullet.png">
+<p id="leftline1" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="leftbullet2" src="bullet.png">
+<p id="leftline2" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="leftbullet3" src="bullet.png">
+<p id="leftline3" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="leftbullet4" src="bullet.png">
+<p id="leftline4" class="oswald">Lorem Ipsum is simply dummy text</p>
+<img id="sideimage" src="tournaments.png">
+</div>
+
+<div id="set7">
+<p id="notbig2" class="oswald">LOREM ISPUM IS SIMPLY DUMMY TEXT</p>
+<p id="bigbutton0" class="oswald pointer">JOIN NOW</p>
+
+
+<span class="oswald" id="footer1"style="width={{WIDTH*.45}}px;top:{{FOOTERTOP}}px;left:{{WIDTH*.11}}px;position:absolute;">
+<h2>PDK GAMING</h2>
+<h6>Lorem ipsum is simply the dummy text<br>and this is used in typesetting<br> and other work in industries</h6>
+<br>
+
+</span>
+<span class="oswald" id="footer2"style="width={{WIDTH*.20}}px;border-left:{{BORDER}}px solid black;top:{{FOOTERTOP}}px;left:{{WIDTH*.41}}px;position:absolute;">
+<h2>&nbsp&nbsp&nbspPLAY</h2>
+<h4>&nbsp&nbsp&nbspAbout us<br>
+&nbsp&nbsp&nbspFAQ<br>
+&nbsp&nbsp&nbspSponsor Info<br>
+&nbsp&nbsp&nbspHow To Play</h4>
+
+
+
+</span>
+<span class="oswald" id="footer3"style="width={{WIDTH*.20}}px;border-left:{{BORDER}}px solid black;top:{{FOOTERTOP}}px;left:{{WIDTH*.61}}px;position:absolute;">
+<h2>&nbsp&nbsp&nbspCOMPANY</h2>
+<h4>&nbsp&nbsp&nbspAbout us <br>
+&nbsp&nbsp&nbspFAQ<br>
+&nbsp&nbsp&nbspSponsor Info<br>
+&nbsp&nbsp&nbspHow To Play</h4>
+
+</span>
+<span class="oswald" id="footer4"style="width={{WIDTH*.20}}px;border-left:{{BORDER}}px solid black;top:{{FOOTERTOP}}px;left:{{WIDTH*.81}}px;position:absolute;">
+<h2>&nbsp&nbsp&nbspGAMES</h2>
+<h4>&nbsp&nbsp&nbspFORTNITE<br>
+&nbsp&nbsp&nbspPUBG<br>
+&nbsp&nbsp&nbspCAll of Duty<br>&nbsp&nbsp</h4>
+
+
+</span>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<style>
+@font-face{
+	font-family:'modithorson';
+	src:url('modithorsonbold.ttf');
+	font-style:normal;
+	font-weight:100;
+}
+@font-face{
+	font-family:'oswald';
+	src:url('oswaldbold.ttf');
+	font-style:normal;
+	font-weight:100;
+}
+.modithorson{
+font-family:modithorson;
+font-weight:100;
+}
+.oswald{
+font-family:oswald;
+font-weight:100;
+}
+
+.pointer:hover{
+cursor:pointer;}
+
+#set1{
+height: {{SET1HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg1.png');background-size: 100%;background-repeat: no-repeat;}
+#divider1{
+width:{{WIDTH+'px'}};top:{{DIVIDER1TOP+'px'}};position:absolute;}
+#logo{
+width:{{LOGOWIDTH+'px'}};left:{{LOGOLEFT}}px;top:{{LOGOTOP}}px;position:absolute;}
+#topright1{
+width:{{TOPRIGHT1WIDTH+'px'}};position:absolute;color:white;top:{{TOPRIGHT1TOP}}px;left:{{TOPRIGHT1LEFT+'px'}};font-size:{{BUTTONFONT+'px'}};}
+#topright1:hover{
+font-size:{{BUTTONFONTHOVER+'px'}};}
+#topright2{
+width:{{TOPRIGHT2WIDTH+'px'}};position:absolute;color:orange;top:{{TOPRIGHT2TOP}}px;left:{{TOPRIGHT2LEFT+'px'}};font-size:{{BUTTONFONT+'px'}};border: {{BORDER}}px solid orange;text-align:center;border-radius:{{BORDERR}}px;}
+#topright2:hover{
+font-size:{{BUTTONFONTHOVER+'px'}};}
+#big1{
+width:{{WIDTH+'px'}};text-align:center;position:absolute;color:white;top:{{BIG1TOP+'px'}};left:0px;font-size:{{BIGFONT+'px'}};}
+#para1{
+width:{{WIDTH+'px'}};text-align:center;position:absolute;color:white;top:{{PARA1TOP+'px'}};left:0px;font-size:{{SMALLFONT+'px'}};}
+#explore{
+width:{{EXPLOREWIDTH+'px'}};text-align:center;font-size:{{EXPLOREFONT+'px'}};color:white;position:absolute;top:{{EXPLORETOP+'px'}};left:{{EXPLORELEFT+'px'}};;border: {{BORDER}}px solid white;border-radius:{{BORDERR}}px;}
+#explore:hover{
+font-size:{{EXPLOREFONTHOVER+'px'}};}
+
+#set2{
+height: {{SET2HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg2.png');background-size: 100%;background-repeat: no-repeat;}
+#tournament{
+width:{{WIDTH+'px'}};text-align:center;position:absolute;color:white;top:{{TOURNAMENTTOP+'px'}};left:0px;font-size:{{WIDTH*.0595+'px'}};}
+#divider2{
+width:{{WIDTH+'px'}};top:{{DIVIDER2TOP+'px'}};position:absolute;}
+#tour1{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.03+'px'}};}
+#tour1:hover{
+animation-name: example;animation-duration: 1s;}
+#tour2{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.165+'px'}};}
+#tour2:hover{
+animation-name: example;animation-duration: 1s;}
+#tour3{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.3+'px'}};}
+#tour3:hover{
+animation-name: example;animation-duration: 1s;}
+#tour4{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.435+'px'}};}
+#tour4:hover{
+animation-name: example;animation-duration: 1s;}
+#tour5{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.57+'px'}};}
+#tour5:hover{
+animation-name: example;animation-duration: 1s;}
+#tour6{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.705+'px'}};}
+#tour6:hover{
+animation-name: example;animation-duration: 1s;}
+#tour7{
+width:{{TOURWIDTH+'px'}};position:absolute;top:{{TOURTOP+'px'}};left:{{WIDTH*.84+'px'}};}
+#tour7:hover{
+animation-name: example;animation-duration: .6s;}
+@keyframes example {
+  from {width: {{TOURWIDTH}}px;top:{{TOURTOP}}px;}
+  to {width: {{TOURWIDTHHOVER}}px;top:{{TOURTOPHOVER}}px;}
+}
+
+
+#set3{
+height: {{SET3HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg3.png');background-size: 100%;background-repeat: no-repeat;}
+#divider3{
+width:{{WIDTH+'px'}};top:{{DIVIDER3TOP+'px'}};position:absolute;}
+#tag1{
+width:{{TAGWIDTH+'px'}};position:absolute;top:{{TAG1TOP+'px'}};left:{{WIDTH*.1+'px'}};}
+#tag2{
+width:{{TAGWIDTH+'px'}};position:absolute;top:{{TAG2TOP+'px'}};left:{{WIDTH*.385+'px'}};}
+#tag3{
+width:{{TAGWIDTH+'px'}};position:absolute;top:{{TAG3TOP+'px'}};left:{{WIDTH*.67+'px'}};}
+
+
+#set4{
+height: {{SET4HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg4.png');background-size: 100%;background-repeat: no-repeat;}
+#divider4{
+width:{{WIDTH+'px'}};top:{{DIVIDER4TOP+'px'}};position:absolute;}
+#big2{
+width:{{BIG2WIDTH+'px'}};text-align:center;position:absolute;color:Black;top:{{BIG2TOP+'px'}};left:{{BIG2LEFT+'px'}};font-size:{{BIGFONT+'px'}};}
+#rightbullet1{
+width:{{BULLETWIDTH}}px;top:{{RIGHTBULLET1TOP}}px;left:{{RIGHTBULLETLEFT}}px;position:absolute;}
+#rightline1{
+position:absolute;color:black;top:{{RIGHTLINE1TOP}}px;left:{{RIGHTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#rightbullet2{
+width:{{BULLETWIDTH}}px;top:{{RIGHTBULLET2TOP}}px;left:{{RIGHTBULLETLEFT}}px;position:absolute;}
+#rightline2{
+position:absolute;color:black;top:{{RIGHTLINE2TOP}}px;left:{{RIGHTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#rightbullet3{
+width:{{BULLETWIDTH}}px;top:{{RIGHTBULLET3TOP}}px;left:{{RIGHTBULLETLEFT}}px;position:absolute;}
+#rightline3{
+position:absolute;color:black;top:{{RIGHTLINE3TOP}}px;left:{{RIGHTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#rightbullet4{
+width:{{BULLETWIDTH}}px;top:{{RIGHTBULLET4TOP}}px;left:{{RIGHTBULLETLEFT}}px;position:absolute;}
+#rightline4{
+position:absolute;color:black;top:{{RIGHTLINE4TOP}}px;left:{{RIGHTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+
+
+
+
+
+#set5{
+height: {{SET5HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg5.png');background-size: 100%;background-repeat: no-repeat;}
+#divider5{
+width:{{WIDTH+'px'}};top:{{DIVIDER5TOP+'px'}};position:absolute;}
+#notbig1{
+width:{{WIDTH+'px'}};text-align:center;position:absolute;color:White;top:{{NOTBIG1TOP+'px'}};font-size:{{WIDTH*.040+'px'}};}
+#bigbutton{
+width:{{WIDTH*.25+'px'}};text-align:center;font-size:{{WIDTH*.0495+'px'}};color:white;position:absolute;top:{{BIGBUTTONTOP+'px'}};left:{{BIGBUTTONLEFT+'px'}};;border: {{BORDER}}px solid white;border-radius:{{BORDERR}}px;}
+
+
+
+
+#set6{
+height: {{SET6HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg6.png');background-size: 100%;background-repeat: no-repeat;}
+#divider6{
+width:{{WIDTH+'px'}};top:{{DIVIDER6TOP+'px'}};position:absolute;}
+#big3{
+width:{{BIG3WIDTH+'px'}};text-align:center;position:absolute;color:Black;top:{{BIG3TOP+'px'}};left:{{BIG3LEFT+'px'}};font-size:{{BIGFONT+'px'}};}
+#leftbullet1{
+width:{{BULLETWIDTH}}px;top:{{LEFTBULLET1TOP}}px;left:{{LEFTBULLETLEFT}}px;position:absolute;}
+#leftline1{
+position:absolute;color:black;top:{{LEFTLINE1TOP}}px;left:{{LEFTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#leftbullet2{
+width:{{BULLETWIDTH}}px;top:{{LEFTBULLET2TOP}}px;left:{{LEFTBULLETLEFT}}px;position:absolute;}
+#leftline2{
+position:absolute;color:black;top:{{LEFTLINE2TOP}}px;left:{{LEFTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#leftbullet3{
+width:{{BULLETWIDTH}}px;top:{{LEFTBULLET3TOP}}px;left:{{LEFTBULLETLEFT}}px;position:absolute;}
+#leftline3{
+position:absolute;color:black;top:{{LEFTLINE3TOP}}px;left:{{LEFTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#leftbullet4{
+width:{{BULLETWIDTH}}px;top:{{LEFTBULLET4TOP}}px;left:{{LEFTBULLETLEFT}}px;position:absolute;}
+#leftline4{
+position:absolute;color:black;top:{{LEFTLINE4TOP}}px;left:{{LEFTLINELEFT}}px;font-size:{{LINEFONT+'px'}};}
+#sideimage{
+width:{{SIDEIMAGEWIDTH}}px;top:{{SIDEIMAGETOP}}px;left:{{SIDEIMAGELEFT}}px;position:absolute;}
+
+
+
+#set7{
+height: {{SET7HEIGHT+'px'}};width: {{WIDTH+'px'}};margin: 0px;background-image: url('bg7.png');background-size: 100%;background-repeat: no-repeat;}
+#notbig2{
+width:{{WIDTH+'px'}};text-align:center;position:absolute;color:orange;top:{{NOTBIG2TOP+'px'}};font-size:{{WIDTH*.040+'px'}};}
+#bigbutton0{
+width:{{WIDTH*.25+'px'}};text-align:center;font-size:{{WIDTH*.0495+'px'}};color:orange;position:absolute;top:{{BIGBUTTON0TOP+'px'}};left:{{BIGBUTTONLEFT+'px'}};;border: {{BORDER}}px solid orange;border-radius:{{BORDERR}}px;}
+
+
+
+
+
+</style>
+<script>
+var app = angular.module('pdkgaming', []);
+app.controller('gaming', function($scope) {
+if(window.innerHeight>window.innerWidth)
+{
+$scope.WIDTH = window.innerWidth;
+$scope.HEIGHT = 1080*(window.innerWidth/1920);
+$scope.SET1HEIGHT =$scope.HEIGHT;
+$scope.LOGOWIDTH=window.innerWidth*.15;
+$scope.LOGOLEFT=window.innerWidth*.4;
+$scope.LOGOTOP=$scope.SET1HEIGHT*.18;
+$scope.DIVIDER1TOP=$scope.HEIGHT-(875-((875*(window.innerWidth/1954))));
+$scope.TOPRIGHT1WIDTH=window.innerWidth*.25;
+$scope.TOPRIGHT1LEFT=window.innerWidth*.29;
+$scope.TOPRIGHT1TOP=.1;
+$scope.BUTTONFONT=window.innerWidth*.03;
+$scope.BUTTONFONTHOVER=window.innerWidth*.016;
+$scope.TOPRIGHT2WIDTH=window.innerWidth*.13;
+$scope.TOPRIGHT2LEFT=window.innerWidth*.53;
+$scope.TOPRIGHT2TOP=1;
+$scope.BORDER=window.innerWidth*.002;
+$scope.BORDERR=window.innerWidth*.01;
+$scope.BIGFONT=window.innerWidth*.07;
+$scope.BIG1TOP=$scope.HEIGHT*.35;
+$scope.SMALLFONT=window.innerWidth*.04;
+$scope.PARA1TOP=$scope.HEIGHT*.57;
+$scope.EXPLOREFONT=window.innerWidth*.04;
+$scope.EXPLOREFONTHOVER=window.innerWidth*.0198;
+$scope.EXPLORETOP=$scope.HEIGHT*.72;
+$scope.EXPLORELEFT=window.innerWidth*.39;
+$scope.EXPLOREWIDTH=window.innerWidth*.2;
+
+$scope.SET2TOP=$scope.SET1HEIGHT;
+$scope.SET2HEIGHT =$scope.SET1HEIGHT;
+$scope.DIVIDER2TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.TOURNAMENTTOP=$scope.SET2TOP+$scope.SET1HEIGHT*.1;
+$scope.TOURWIDTH=window.innerWidth*.13;
+$scope.TOURWIDTHHOVER=window.innerWidth*.16;
+$scope.TOURTOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT*.4;
+$scope.TOURTOPHOVER=$scope.SET1HEIGHT+$scope.SET2HEIGHT*.3;
+
+$scope.SET3TOP=$scope.SET2TOP+$scope.SET2HEIGHT;
+$scope.SET3HEIGHT=window.innerWidth*1543/2077;
+$scope.DIVIDER3TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.TAGWIDTH=window.innerWidth*.23;
+$scope.TAG1TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT*.07;
+$scope.TAG2TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT*.17;
+$scope.TAG3TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT*.27;
+
+$scope.SET4TOP=$scope.SET3TOP+$scope.SET3HEIGHT;
+$scope.SET4HEIGHT=$scope.SET1HEIGHT;
+$scope.DIVIDER4TOP=$scope.SET4TOP+$scope.SET4HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.BIG2TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.01;
+$scope.BIG2WIDTH=window.innerWidth*.5;
+$scope.BIG2LEFT=window.innerWidth*.35;
+$scope.BULLETWIDTH=window.innerWidth*.06;
+$scope.RIGHTBULLETLEFT=window.innerWidth*0.38;
+$scope.RIGHTLINELEFT=window.innerWidth*.45;
+$scope.LINEFONT=window.innerWidth*.02;
+$scope.RIGHTBULLET1TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.25;
+$scope.RIGHTLINE1TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.22;
+$scope.RIGHTBULLET2TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.35;
+$scope.RIGHTLINE2TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.32;
+$scope.RIGHTBULLET3TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.45;
+$scope.RIGHTLINE3TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.42;
+$scope.RIGHTBULLET4TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.55;
+$scope.RIGHTLINE4TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.52;
+
+$scope.SET5TOP=$scope.SET4TOP+$scope.SET4HEIGHT;
+$scope.SET5HEIGHT=500;
+$scope.DIVIDER5TOP=$scope.SET5TOP+$scope.SET5HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.NOTBIG1TOP=$scope.SET5TOP+$scope.SET4HEIGHT*.05;
+$scope.BIGBUTTONTOP=$scope.SET5TOP+$scope.SET4HEIGHT*.18;
+$scope.BIGBUTTONLEFT=window.innerWidth*.355;
+
+
+$scope.SET6TOP=$scope.SET5TOP+$scope.SET5HEIGHT;
+$scope.SET6HEIGHT=$scope.SET1HEIGHT;
+$scope.DIVIDER6TOP=$scope.SET6TOP+$scope.SET6HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.BIG3TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.01;
+$scope.BIG3WIDTH=window.innerWidth*.5;
+$scope.BIG3LEFT=window.innerWidth*.07;
+$scope.LEFTBULLETLEFT=window.innerWidth*.1;
+$scope.LEFTLINELEFT=window.innerWidth*.18;
+$scope.LEFTBULLET1TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.25;
+$scope.LEFTLINE1TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.22;
+$scope.LEFTBULLET2TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.35;
+$scope.LEFTLINE2TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.32;
+$scope.LEFTBULLET3TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.45;
+$scope.LEFTLINE3TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.42;
+$scope.LEFTBULLET4TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.55;
+$scope.LEFTLINE4TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.52;
+$scope.SIDEIMAGEWIDTH=window.innerWidth*.25;
+$scope.SIDEIMAGETOP=$scope.SET6TOP+$scope.SET6HEIGHT*.1;
+$scope.SIDEIMAGELEFT=window.innerWidth*.6;
+
+
+
+$scope.SET7TOP=$scope.SET6TOP+$scope.SET6HEIGHT;
+$scope.SET7HEIGHT=$scope.SET1HEIGHT;
+$scope.NOTBIG2TOP=$scope.SET7TOP+$scope.SET7HEIGHT*.05;
+$scope.BIGBUTTON0TOP=$scope.SET7TOP+$scope.SET7HEIGHT*.15;
+$scope.FOOTERTOP=$scope.SET7TOP+$scope.SET7HEIGHT*.7;
+
+}
+else
+{
+$scope.WIDTH = window.innerWidth;
+$scope.HEIGHT = window.innerHeight;
+$scope.SET1HEIGHT =480;
+$scope.LOGOWIDTH=window.innerWidth*.17;
+$scope.LOGOLEFT=window.innerWidth*.05;
+$scope.LOGOTOP=2;
+$scope.DIVIDER1TOP=$scope.SET1HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.TOPRIGHT1WIDTH=window.innerWidth*.2;
+$scope.TOPRIGHT1LEFT=window.innerWidth*.825;
+$scope.TOPRIGHT1TOP=2;
+$scope.BUTTONFONT=window.innerWidth*.015;
+$scope.BUTTONFONTHOVER=window.innerWidth*.016;
+$scope.TOPRIGHT2WIDTH=window.innerWidth*.06;
+$scope.TOPRIGHT2LEFT=window.innerWidth*.92;
+$scope.TOPRIGHT2TOP=2;
+$scope.BORDER=window.innerWidth*.002;
+$scope.BORDERR=window.innerWidth*.01;
+$scope.BIGFONT=window.innerWidth*.0595;
+$scope.BIG1TOP=window.innerHeight*.12;
+$scope.SMALLFONT=window.innerWidth*.011;
+$scope.PARA1TOP=window.innerHeight*.34;
+$scope.EXPLOREFONT=window.innerWidth*.0195;
+$scope.EXPLOREFONTHOVER=window.innerWidth*.0198;
+$scope.EXPLORETOP=window.innerHeight*.45;
+$scope.EXPLORELEFT=window.innerWidth*.445;
+$scope.EXPLOREWIDTH=window.innerWidth*.1;
+
+$scope.SET2TOP=$scope.SET1HEIGHT;
+$scope.SET2HEIGHT =600;
+$scope.DIVIDER2TOP=$scope.SET2TOP+$scope.SET2HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.TOURNAMENTTOP=$scope.SET2TOP;
+$scope.TOURWIDTH=window.innerWidth*.13;
+$scope.TOURWIDTHHOVER=window.innerWidth*.16;
+$scope.TOURTOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT*.4;
+$scope.TOURTOPHOVER=$scope.SET1HEIGHT+$scope.SET2HEIGHT*.3;
+
+$scope.SET3TOP=$scope.SET2TOP+$scope.SET2HEIGHT;
+$scope.SET3HEIGHT=window.innerWidth*1543/2077;
+$scope.DIVIDER3TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.TAGWIDTH=window.innerWidth*.23;
+$scope.TAG1TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT*.07;
+$scope.TAG2TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT*.17;
+$scope.TAG3TOP=$scope.SET1HEIGHT+$scope.SET2HEIGHT+$scope.SET3HEIGHT*.27;
+
+$scope.SET4TOP=$scope.SET3TOP+$scope.SET3HEIGHT;
+$scope.SET4HEIGHT=600;
+$scope.DIVIDER4TOP=$scope.SET4TOP+$scope.SET4HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.BIG2TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.01;
+$scope.BIG2WIDTH=window.innerWidth*.5;
+$scope.BIG2LEFT=window.innerWidth*.5;
+$scope.BULLETWIDTH=window.innerWidth*.06;
+$scope.RIGHTBULLETLEFT=window.innerWidth*.5;
+$scope.RIGHTLINELEFT=window.innerWidth*.58;
+$scope.LINEFONT=window.innerWidth*.02;
+$scope.RIGHTBULLET1TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.25;
+$scope.RIGHTLINE1TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.22;
+$scope.RIGHTBULLET2TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.35;
+$scope.RIGHTLINE2TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.32;
+$scope.RIGHTBULLET3TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.45;
+$scope.RIGHTLINE3TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.42;
+$scope.RIGHTBULLET4TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.55;
+$scope.RIGHTLINE4TOP=$scope.SET4TOP+$scope.SET4HEIGHT*.52;
+
+$scope.SET5TOP=$scope.SET4TOP+$scope.SET4HEIGHT;
+$scope.SET5HEIGHT=500;
+$scope.DIVIDER5TOP=$scope.SET5TOP+$scope.SET5HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.NOTBIG1TOP=$scope.SET5TOP+$scope.SET4HEIGHT*.1;
+$scope.BIGBUTTONTOP=$scope.SET5TOP+$scope.SET4HEIGHT*.25;
+$scope.BIGBUTTONLEFT=window.innerWidth*.355;
+
+
+$scope.SET6TOP=$scope.SET5TOP+$scope.SET5HEIGHT;
+$scope.SET6HEIGHT=600;
+$scope.DIVIDER6TOP=$scope.SET6TOP+$scope.SET6HEIGHT+20-(875-((875*(window.innerWidth/1954))));
+$scope.BIG3TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.01;
+$scope.BIG3WIDTH=window.innerWidth*.5;
+$scope.BIG3LEFT=window.innerWidth*.07;
+$scope.LEFTBULLETLEFT=window.innerWidth*.1;
+$scope.LEFTLINELEFT=window.innerWidth*.18;
+$scope.LEFTBULLET1TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.25;
+$scope.LEFTLINE1TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.22;
+$scope.LEFTBULLET2TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.35;
+$scope.LEFTLINE2TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.32;
+$scope.LEFTBULLET3TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.45;
+$scope.LEFTLINE3TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.42;
+$scope.LEFTBULLET4TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.55;
+$scope.LEFTLINE4TOP=$scope.SET6TOP+$scope.SET6HEIGHT*.52;
+$scope.SIDEIMAGEWIDTH=window.innerWidth*.25;
+$scope.SIDEIMAGETOP=$scope.SET6TOP+$scope.SET6HEIGHT*.1;
+$scope.SIDEIMAGELEFT=window.innerWidth*.6;
+
+
+
+$scope.SET7TOP=$scope.SET6TOP+$scope.SET6HEIGHT;
+$scope.SET7HEIGHT=window.innerHeight;
+$scope.NOTBIG2TOP=$scope.SET7TOP+$scope.SET7HEIGHT*.01;
+$scope.BIGBUTTON0TOP=$scope.SET7TOP+$scope.SET7HEIGHT*.12;
+$scope.FOOTERTOP=$scope.SET7TOP+$scope.SET7HEIGHT*.7;
+
+}
+});
+</script>
+</body>
+</html>
+
+
